@@ -2286,4 +2286,14 @@ heading.client h2 {
 .client-logo-item {
 height: 100px;
 }
+  .magic-cursor__ball{
+    display: none !important;
+  }
+}
+
+/* Hide the magic cursor only on screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .magic-cursor__ball {
+    display: none !important;
+  }
 }
