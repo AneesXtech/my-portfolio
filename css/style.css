@@ -2365,7 +2365,7 @@ flex-direction: column;
     padding-bottom: 80px;
     position: relative;
     height: 100%;
-    background: url(https://sybrid.com/assets/img/offering-third-wrapper-bg.webp) center / cover no-repeat fixed;
+    background: url(../images/offering-third-wrapper-bg.webp) center / cover no-repeat fixed;
     overflow: hidden;
     color: #fff;
 }
