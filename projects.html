@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- META -->
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>git add .Muhammad Anees Portfolio</title>
+    <title>All Projects | Muhammad Anees Portfolio</title>
     <meta name="description" content="Professional CMS Developer specializing in WordPress, Shopify, Wix, and Squarespace stores.">
     <meta name="author" content="Muhammad Anees">
 
@@ -16,6 +15,8 @@
     <meta property="og:title" content="Muhammad Anees | CMS & Frontend Developer">
     <meta property="og:description" content="Building high-growth e-commerce stores and automated lead-capture systems.">
     <meta property="og:image" content="images/Linkedin.png"> <link rel="icon" type="image/png" href="images/Linkedin.png">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <!-- FAVICON ICON -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- ALL GOOGLE FONTS -->
@@ -34,20 +35,19 @@
     <!-- MAIN STYLE CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-        <!-- START HEADER DESIGN AREA -->
+
+     <!-- START HEADER DESIGN AREA -->
     <header>
             <div class="container">
         <nav class="navbar">
 
 
-               <div class="logo">
+                  <div class="logo">
     <a href="index.html">
         <img src="images/logo.png" alt="Logo">
     </a>
 </div>
-
 
                 <div class="menu-btn-wrapper" id="menuToggle">
                     <span class="menu-text" id="toggleLabel">Menu</span>
@@ -58,10 +58,10 @@
  </nav>
             </div>
        
-        <div class="menu-overlay">
+         <div class="menu-overlay">
     <div class="menu-container">
         <div class="nav-links">
-            <a href="#home" class="nav-item"><div>HOME</div></a>
+            <a href="index.html" class="nav-item"><div>HOME</div></a>
             <a href="#dn-about-section" class="nav-item"><div>ABOUT</div></a>
             <a href="#pts-slider" class="nav-item"><div>TESTIMONIALS</div></a>
             <a href="#portfolio-section" class="nav-item"><div>PORTFOLIO</div></a>
@@ -80,115 +80,193 @@
 </div>
 
     </header>
- 
-    <!-- START Service Section AREA -->
-    <section id="home" class="main-hero-area">
-        <div class="bg-layer"></div>
 
-        <div class="container">
-            
-                <div class="content-container">
-                    <!-- START HERO DESIGN AREA -->
-                    <div class="hero-content rmb-25 wow fadeInUp delay-0-2s text-center">
-                        <h2>👋 Hi, I'm Muhammad Anees</h2>
-                        <h1>Senior Front-End & CMS <span>Developer</span></h1>
-<p>
-  A cluttered or slow website is a silent business killer. I bridge the gap between 
-  complex code and <b>measurable ROI</b><br> by building <b>clean digital foundations</b> 
-  that turn your website into a high-performing asset.
-</p>
-                     <div class="dot-shape">
-                            <img src="images/about-dot.png" alt="Shape">
-                        </div>
-                        <div class="dot-shape2">
-                            <img src="images/dot-shape-circle.png" alt="Shape">
-                        </div>
-                           <li class="content__item" style="list-style: none;">
-                    <a href="https://wa.me/923432112150" target="_blank" class="button button--calypso">
-                        <span>Get a Free Strategy Consultation</span>
-                    </a>
-                </li>
-                        <!-- / END HERO DESIGN AREA -->
-                    </div>
+
+   <!-- // hero section code // -->
+
+   <section class="offering-third-wrapper jquery-ripples" id="ripple-sec">
+    <div class="container-hero">
+  <div class="content">
+  <span class="dn-badge"><span class="dn-dot"></span>Projects</span>
+    <h3>
+      As a CMS Developer, I build high-performance WordPress, Shopify, Wix, and Squarespace sites designed to drive growth through high-converting e-commerce stores. I deliver "lasting and substantial improvements" by creating professional lead-capture systems and intelligent website flows that boost sales.
+    </h3>
+  </div>
+  <div class="spacer-div"></div>
+    </div>
+
+</section>
+
+<!-- //Project Tabs code/// -->
+
+<section class="all-projects">
+    <div class="container">
+    <div class="tabs-container">
+        <div class="tab-wrapper">
+            <button class="tab-btn active" onclick="filterProjects('all')" data-filter="all">All</button>
+            <button class="tab-btn" onclick="filterProjects('wordpress')" data-filter="wordpress">WordPress</button>
+            <button class="tab-btn" onclick="filterProjects('shopify')" data-filter="shopify">Shopify</button>
+            <button class="tab-btn" onclick="filterProjects('squarespace')" data-filter="squarespace">Squarespace</button>
+        </div>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+        
+        <div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/TBCstudio.jpg" alt="TBC Studio">
+                <div class="hover-badge">View</div>
             </div>
-
-    </section>
-    <section class="stacking-wrapper container">
-        <div class="content-left">
-            <div class="sticky-content">
-                  <span class="dn-badge"><span class="dn-dot"></span>Services</span>
-                <h2 class="section-label">Why Your Digital Foundation Matters</h2>
-                <p class="section-description">
-                   A cluttered, slow website is a silent business killer that drives customers to your competitors. I bridge the gap between complex code and <b>business ROI</b> by building <b>clean, high-performance digital foundations</b>. By removing technical friction, I turn your website into your most productive salesperson—building instant trust and <b>converting visitors into loyal clients</b>.
-                </p>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>Men's Health Supplement Brand</h3>
+                </div>
+                <div class="arrow"><a href="https://tbcstudios.com.au/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
             </div>
         </div>
 
-        <div class="cards-column">
-
-            <div class="service-card card-1">
-                <div class="card-inner">
-                    <div class="card-text-side">
-                        <h3 class="card-title">High-Performance Business Websites</h3>
-                        <div class="divide">
-
-                            <hr class="separator">
-                            <p class="description">Cluttered designs fail to communicate value, causing leads to bounce. I solve this by converting <b>Figma designs</b> into <b>pixel-perfect, minimalist platforms</b> on <b>WordPress, Wix, or Squarespace</b>. I build professional, mobile-responsive homes that establish brand authority and are technically optimized to <b>dominate search rankings</b>.</p>
-                            <a href="#" class="cta"><i class="fas fa-arrow-right"></i> Know More</a>
-                        </div>
-                    </div>
-                    <div class="card-image-side">
-                        <div class="image-anime">
-                            <img src="https://framerusercontent.com/images/tFUJ2exuw4jRZJDsDCNbEs62Zug.jpg?scale-down-to=512&width=1920&height=1080"
-                                alt="Business Websites">
-                        </div>
-                    </div>
-                </div>
+        <div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/Juliabeauty.jpg" alt="Julia Beauty">
+                <div class="hover-badge">View</div>
             </div>
-
-            <div class="service-card card-2">
-                <div class="card-inner">
-                    <div class="card-text-side">
-                        <h3 class="card-title">Conversion-Optimized E-commerce Stores</h3>
-                        <div class="divide">
-                            <hr class="separator">
-                            <p class="description">A "heavy" or confusing store kills sales through technical friction. I eliminate this by engineering high-converting <b>Shopify and WooCommerce</b> environments focused on <b>maximum ROI</b>. By streamlining the checkout flow and removing technical noise, I create a <b>frictionless shopping experience</b> built for speed and measurable growth.</p>
-                            <a href="#" class="cta"><i class="fas fa-arrow-right"></i> Know More</a>
-                        </div>
-                    </div>
-                    <div class="card-image-side">
-                        <div class="image-anime">
-                            <img src="https://framerusercontent.com/images/tFUJ2exuw4jRZJDsDCNbEs62Zug.jpg?scale-down-to=512&width=1920&height=1080"
-                                alt="E-commerce Stores">
-                        </div>
-                    </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>Julia Beauty</h3>
                 </div>
+                <div class="arrow"><a href="#" ><i class="fas fa-arrow-right"></i></a></div>
             </div>
-
-            <div class="service-card card-3">
-                <div class="card-inner">
-                    <div class="card-text-side">
-                        <h3 class="card-title">Strategic Web Maintenance & Performance</h3>
-                        <div class="divide">
-
-                            <hr class="separator">
-                            <p class="description">Technical debt and outdated assets create security risks that slow down your growth. I act as your technical partner, providing proactive <b>Digital Care</b> and <b>performance audits</b> to keep your site rock-solid. I handle the backend complexities ensuring your website remains a <b>clean, secure, and reliable asset</b>.</p>
-                            <a href="#" class="cta"><i class="fas fa-arrow-right"></i> Know More</a>
-                        </div>
-                    </div>
-                    <div class="card-image-side">
-                        <div class="image-anime">
-                            <img src="https://framerusercontent.com/images/tFUJ2exuw4jRZJDsDCNbEs62Zug.jpg?scale-down-to=512&width=1920&height=1080"
-                                alt="Strategy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </section>
 
-    <!-- START Testimonial AREA -->
+        <div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/Tonyd.jpg" alt="Tony Disilvestro">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>Tony Disilvestro</h3>
+                </div>
+                <div class="arrow"><a href="https://tonydisilvestro.com/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+
+        <div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/clearingthenoise.jpg" alt="Clearing the Noise">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>Clearing the Noise</h3>
+                </div>
+                <div class="arrow"><a href="#"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+
+        <div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/first heritage.png" alt="First heritage">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>First Heritage</h3>
+                </div>
+                <div class="arrow"><a href="https://fhia.net/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+ <div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/ACESD.png" alt="ACESD">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>ACESD</h3>
+                </div>
+                <div class="arrow"><a href="#"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+<div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/holistic business solution.png" alt="holistic">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>Holistic Business</h3>
+                </div>
+                <div class="arrow"><a href="https://holisticbusinesssolution.com/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+<div class="single-project wordpress">
+            <div class="img-project">
+                <img src="images/True Care.png" alt="True Care">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">WordPress</span>
+                    <h3>True Care</h3>
+                </div>
+                <div class="arrow"><a href="#"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+<div class="single-project shopify">
+            <div class="img-project">
+                <img src="images/black roc.png" alt="Blackroc Herbals">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">Shopify</span>
+                    <h3>Blackroc Herbals</h3>
+                </div>
+                <div class="arrow"><a href="https://blackrocherbals.com/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+<div class="single-project shopify">
+            <div class="img-project">
+                <img src="images/East 18.png" alt="East 18">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">Shopify</span>
+                    <h3>East 18</h3>
+                </div>
+                <div class="arrow"><a href="https://east18.com/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+
+        <div class="single-project squarespace">
+            <div class="img-project">
+                <img src="images/Signal Shift.png" alt="Signal Shift">
+                <div class="hover-badge">View</div>
+            </div>
+            <div class="project-info">
+                <div class="content">
+                    <span class="category-tag">Squarespace</span>
+                    <h3>Signal Shift</h3>
+                </div>
+                <div class="arrow"><a href="https://www.signalshifthealth.com/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+        </div>
+        </div>
+</section>
+
+
+
+   <!-- START Testimonial AREA -->
          <section id="pts-slider">
         <div class="container">
             <!-- Custom Cursor -->
@@ -397,152 +475,13 @@
             </div>
 <li class="content__item" style="list-style: none;">
                         <a href="#"  class="button button--calypso">
-                            <span>View Testimonial Video</span>
+                            <span>View Testiominal Video</span>
                         </a>
                     </li>
     </div>
            </section>
-
-    <!-- START PORTFOLIO DESIGN AREA -->
-    <section  class="container">
-        <div class="portfolio" >
-        <div class="column-one">
-            <div class="section-title">
-<span class="dn-badge"><span class="dn-dot"></span>Case Studios</span>
-                <h2>Experience Matters</h2>
-            </div>
-
-            <div class="single-project">
-                <div class="img-project">
-                <img src="images/TBCstudio.jpg" alt="TBC Studio">
-                <div class="hover-badge">View</div>
-            </div>
-            <div class="project-info">
-                <div class="content">
-                    <span class="category-tag">WordPress</span>
-                    <h3>Men's Health Supplement Brand</h3>
-                </div>
-                <div class="arrow"><a href="https://tbcstudios.com.au/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
-            </div>
-            </div>
-
-            <div class="single-project">
-                <div class="img-project">
-                <img src="images/first heritage.png" alt="First heritage">
-                <div class="hover-badge">View</div>
-            </div>
-            <div class="project-info">
-                <div class="content">
-                    <span class="category-tag">WordPress</span>
-                    <h3>First Heritage</h3>
-                </div>
-                <div class="arrow"><a href="https://fhia.net/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
-            </div>
-            </div>
-        </div>
-
-        <div class="column-two">
-            <div class="single-project">
-                 <div class="img-project">
-                <img src="images/black roc.png" alt="Blackroc Herbals">
-                <div class="hover-badge">View</div>
-            </div>
-            <div class="project-info">
-                <div class="content">
-                    <span class="category-tag">Shopify</span>
-                    <h3>Blackroc Herbals</h3>
-                </div>
-                <div class="arrow"><a href="https://blackrocherbals.com/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
-            </div>
-            </div>
-
-            <div class="single-project">
-                <div class="img-project">
-                <img src="images/Signal Shift.png" alt="Signal Shift">
-                <div class="hover-badge">View</div>
-            </div>
-            <div class="project-info">
-                <div class="content">
-                    <span class="category-tag">Squarespace</span>
-                    <h3>Signal Shift</h3>
-                </div>
-                <div class="arrow"><a href="https://www.signalshifthealth.com/" target="_blank"><i class="fas fa-arrow-right"></i></a></div>
-            </div>
-            </div>
-
-            <div class="section-description">
-                <p>Growth is not an accident. It is the result of great strategic planning plus disciplined execution.
-                </p>
-<li class="content__item" style="list-style: none;">
-                            <a href="projects.html" class="button button--calypso">
-                                <span>View More Projects</span>
-                            </a>
-                        </li>
-                                </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- START ABOUT ME AREA -->
-    <section id="dn-about-section" class="container">
-    <span class="dn-badge"><span class="dn-dot"></span> About Me</span>
-        
-    <h2 id="dn-main-heading" class="dn-heading-primary">
-        Turning Complex Code into High-Performing Digital ROI
-    </h2>
-
-    <div class="dn-content-grid">
-        <div class="dn-image-box">
-            <img src="images/MuhammadAnees.webp" alt="Muhammad Anees - Professional Developer" id="dn-featured-img">
-        </div>
-
-        <article class="dn-text-content">
-            <p class="dn-intro-text">
-                I am <strong>Muhammad Anees</strong>, a Senior Developer dedicated to engineering digital experiences that don't just look great—they perform.
-            </p>
-            <p class="dn-body-text">
-                With 4+ years of expertise in Frontend and CMS development, I specialize in building fast, scalable, and minimalist solutions. I bridge the gap between technical complexity and business growth, ensuring your platform works as hard as your business does.
-            </p>
-            <p class="dn-body-text">
-                My approach focuses on <strong>Clean Architecture</strong>. Whether it is a high-converting E-commerce store or a complex business site, I replace technical clutter with high-speed performance to maximize your brand's authority.
-            </p>
-
-            <div id="dn-stats-grid" class="dn-stats-container">
-                
-                <div class="dn-stat-item">
-                    <span class="dn-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--sec-clor)"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                    </span>
-                    <span class="dn-stat-text"><strong>80+</strong> Projects Completed</span>
-                </div>
-
-                <div class="dn-stat-item">
-                    <span class="dn-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--sec-clor)"><rect x="2" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                    </span>
-                    <span class="dn-stat-text"><strong>4+</strong> Years of Expertise</span>
-                </div>
-
-                <div class="dn-stat-item">
-                    <span class="dn-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--sec-clor)"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                    </span>
-                    <span class="dn-stat-text"><strong>99%</strong> Speed Optimization</span>
-                </div>
-
-                <div class="dn-stat-item">
-                    <span class="dn-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--sec-clor)"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    </span>
-                    <span class="dn-stat-text"><strong>100%</strong> Client Retention</span>
-                </div>
-
-            </div>
-        </article>
-    </div>
-</section>
-
-    <!-- START client area AREA -->
+ 
+   <!-- START client area AREA -->
     <div class="client-logo-area">
         <div class="container-fluid">
             <div class="row justify-content-center">
@@ -584,7 +523,7 @@
         </div>
     </div>
 
-    <!-- START footer  AREA -->
+   <!-- START footer  AREA -->
     <footer class="anees-footer">
     <div class="footer-container">
         
@@ -631,9 +570,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
-</div>
 </body>
-
 </html>

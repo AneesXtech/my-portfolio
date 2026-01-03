@@ -187,3 +187,87 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+//// curser code//
+const cursorBall = document.querySelector('.magic-cursor__ball');
+  
+  // Smooth Follow Logic
+  document.addEventListener('mousemove', (e) => {
+    gsap.to(cursorBall, {
+      x: e.clientX,
+      y: e.clientY,
+      xPercent: -50,
+      yPercent: -50,
+      duration: 0.15,
+      ease: "power2.out"
+    });
+  });
+
+  // Heading Hover logic
+  const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+  headings.forEach(el => {
+    el.addEventListener("mouseenter", () => {
+      // 1. Ball ko bada karo
+      gsap.to(cursorBall, { scale: 5, duration: 0.3 });
+      // 2. Color aur transparency wali class add karo
+      cursorBall.classList.add('is-active');
+    });
+
+    el.addEventListener("mouseleave", () => {
+      // 1. Ball ko wapas normal size karo
+      gsap.to(cursorBall, { scale: 1, duration: 0.3 });
+      // 2. Class remove karo
+      cursorBall.classList.remove('is-active');
+    });
+  });
+
+
+  //// Project Tab Code//
+     function filterProjects(category) {
+        const projects = document.querySelectorAll('.single-project');
+        const buttons = document.querySelectorAll('.tab-btn');
+
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+            if(btn.getAttribute('data-filter') === category) btn.classList.add('active');
+        });
+
+        projects.forEach(project => {
+            if (category === 'all') {
+                project.style.display = 'block';
+            } else {
+                project.classList.contains(category) ? project.style.display = 'block' : project.style.display = 'none';
+            }
+        });
+    }
+
+
+    //// rimple code//
+
+    $(document).ready(function(){
+  const $sec = $("#ripple-sec");
+
+  try {
+    $sec.ripples({ resolution:1024, perturbance:0.004, interactive:false });
+
+    /* Looping soft ripples */
+    setInterval(()=>{
+      const w=$sec.outerWidth(), h=$sec.outerHeight();
+      $sec.ripples("drop", Math.random()*w, Math.random()*h, 70, 0.012);
+    },1800);
+
+    /* Cursor-driven extra ripples */
+    let lx=0, ly=0;
+    $sec.on("mousemove", function(e){
+      const offset=$sec.offset();
+      const x=e.pageX-offset.left;
+      const y=e.pageY-offset.top;
+      const v=Math.abs(x-lx)+Math.abs(y-ly);
+      lx=x; ly=y;
+      $sec.ripples("drop", x, y, 45, Math.min(v/450,0.07));
+    });
+
+  } catch(e){console.error(e);}
+});

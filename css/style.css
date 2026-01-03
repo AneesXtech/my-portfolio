@@ -645,20 +645,21 @@ h2.collab-text {
         padding: 15px 0;
     }
 }
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 8px;   /* slightly smaller */
+    height: 8px;  /* for horizontal scroll */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #0ffcbe;
-    /* border-radius: 10px;  */
+    background-color: var(--third-color); /* use your variable color */
+    border-radius: 50px;                  /* fully rounded */
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    /* border-radius: 10px; */
+    background-color: #1a1a1a; /* dark grey/black background */
 }
+
 
 /*
 * EXPERIENCE MATTERS SECTION - EXACT DARK CARD DESIGN
@@ -1435,7 +1436,6 @@ header {
     gap: 40px;
     align-items: flex-start;
     position: relative;;
-    min-height: 300vh;
 
 }
 
@@ -1451,14 +1451,12 @@ header {
     flex: 1.6;
     display: flex;
     flex-direction: column;
-    gap: 0 !important;
+    gap: 30px !important;
 }
 
 /* Service Card Container */
 .service-card {
     width: 100%;
-    margin-bottom: 50vh;
-    /* Har card ke beech ka scroll gap */
     will-change: transform, opacity;
     position: relative;
 }
@@ -2141,7 +2139,7 @@ padding: 0px 10px;
      font-size: 16px;
 }
 #pts-slider .pts-card{
-       min-height: 320px;
+       min-height: 370px;
 }
 #pts-slider .pts-header{
     gap:0px;
@@ -2296,4 +2294,98 @@ height: 100px;
   .magic-cursor__ball {
     display: none !important;
   }
+}
+
+/* /// project page code// */
+section.all-projects { padding: 80px 0px; } .tabs-container { text-align: center; margin-bottom: 50px; } .tab-wrapper { display: inline-flex; background: var(--grey-bg-color); padding: 8px; border-radius: 100px; border: 1px solid var(--primary-color) ; } .tab-btn { border: 1px solid transparent; background: transparent; padding: 12px 25px; font-size: 16px; font-weight: 500; cursor: pointer; border-radius: 50px; color: var(--heading-color); transition: all 0.3s ease; margin: 0 5px; } .tab-btn.active { background: var(--sec-clor); color: white; border-color: var(--sec-clor); } .tab-btn:hover:not(.active) { border-color:var(--sec-clor); } /* Grid Layout - 16 projects ko handle karne ke liye */ .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+
+/* Responsive - Tablet */
+@media (max-width: 992px) {
+    .tab-wrapper {
+        justify-content: center;
+        gap: 8px;
+    }
+    .tab-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    section.all-projects{
+        padding: 50px 0px;
+    }
+    .tabs-container {
+    margin-bottom: 30px;
+}
+    .tab-wrapper {
+flex-direction: column;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        display: grid;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .tab-btn {
+        width: 100%;           /* full-width buttons */
+        max-width: 300px;      /* optional: limit width */
+        padding: 12px 0;
+        font-size: 14px;
+   border: 1px  solid var(--heading-color) !important;
+    }
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+}
+.container-hero{
+               grid-template-columns: 1fr !important;
+                   padding: 0px 20px;
+}
+.offering-third-wrapper .content h3 {
+    font-size: 24px !important;
+}
+    .offering-third-wrapper {
+        min-height: 0px !important;
+    }
+}
+@media (min-width: 1024px){
+.offering-third-wrapper {
+    min-height: 100vh !important;
+    }
+}
+    
+
+
+        /* //// project hero section code// */
+.offering-third-wrapper {
+    padding-top: 200px !important;
+    padding-bottom: 80px;
+    position: relative;
+    height: 100%;
+    background: url(https://sybrid.com/assets/img/offering-third-wrapper-bg.webp) center / cover no-repeat fixed;
+    overflow: hidden;
+    color: #fff;
+}
+
+.container-hero{
+    display: grid;
+    align-items: center;
+   grid-template-columns: 1fr 1fr ;
+      width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 30px;
+    justify-content: center;
+
+}
+  .offering-third-wrapper .content{max-width:600px;z-index:2;}
+  .offering-third-wrapper .content p{opacity:0.7;margin-bottom:10px;}
+  .offering-third-wrapper .content h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: var(--heading-font-family);
 }
